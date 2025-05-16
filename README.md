@@ -26,7 +26,7 @@ KubeForge is a Go-based command-line tool for automated Kubernetes installation 
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/k8s-cloud-installer.git
+git clone https://github.com/ochestra-tech/k8s-cloud-installer.git
 cd k8s-cloud-installer
 
 # Build the binary
