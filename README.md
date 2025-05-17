@@ -19,7 +19,7 @@ KubeForge is a Go-based command-line tool for automated Kubernetes installation 
 
 ### Prerequisites
 
-- Go 1.16 or later
+- Go 1.20 or later
 - SSH access to a virtual machine on one of the supported cloud providers
 
 ### Building from source
