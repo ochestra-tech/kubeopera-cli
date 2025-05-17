@@ -30,19 +30,19 @@ git clone https://github.com/ochestra-tech/k8s-cloud-installer.git
 cd k8s-cloud-installer
 
 # Build the binary
-go build -o k8s-installer cmd/installer/main.go
+go build -o kubeforge-cli cmd/installer/main.go
 
 # Make it executable
-chmod +x k8s-installer
+chmod +x kubeforge-cli
 
 # Optionally, move to a directory in your PATH
-sudo mv k8s-installer /usr/local/bin/
+sudo mv kubeforge-cli /usr/local/bin/
 ```
 
 ## Usage
 
 ```
-k8s-installer [flags]
+kubeforge-cli [flags]
 ```
 
 ### Flags
@@ -62,37 +62,37 @@ k8s-installer [flags]
 #### Install on AWS EC2 Instance
 
 ```bash
-k8s-installer -host=54.123.45.67 -key=~/.ssh/aws-key.pem -provider=aws
+kubeforge-cli -host=54.123.45.67 -key=~/.ssh/aws-key.pem -provider=aws
 ```
 
 #### Install on GCP Compute Engine VM
 
 ```bash
-k8s-installer -host=35.123.45.67 -key=~/.ssh/gcp-key.pem -provider=gcp -user=username
+kubeforge-cli -host=35.123.45.67 -key=~/.ssh/gcp-key.pem -provider=gcp -user=username
 ```
 
 #### Install on Azure VM
 
 ```bash
-k8s-installer -host=20.123.45.67 -key=~/.ssh/azure-key.pem -provider=azure
+kubeforge-cli -host=20.123.45.67 -key=~/.ssh/azure-key.pem -provider=azure
 ```
 
 #### Install on Oracle Cloud VM
 
 ```bash
-k8s-installer -host=129.123.45.67 -key=~/.ssh/oracle-key.pem -provider=oracle
+kubeforge-cli -host=129.123.45.67 -key=~/.ssh/oracle-key.pem -provider=oracle
 ```
 
 #### Specify Linux distribution
 
 ```bash
-k8s-installer -host=54.123.45.67 -key=~/.ssh/my-key.pem -provider=aws -distro=ubuntu
+kubeforge-cli -host=54.123.45.67 -key=~/.ssh/my-key.pem -provider=aws -distro=ubuntu
 ```
 
 #### Using password authentication instead of key
 
 ```bash
-k8s-installer -host=54.123.45.67 -password=securepassword -provider=aws
+kubeforge-cli -host=54.123.45.67 -password=securepassword -provider=aws
 ```
 
 ## Detailed Implementation

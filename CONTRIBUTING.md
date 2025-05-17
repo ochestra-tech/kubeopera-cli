@@ -32,14 +32,14 @@ There are many ways to contribute to this project:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/k8s-cloud-installer.git
+git clone https://github.com/ochestra-tech/kubeforge-cli.git
 cd k8s-cloud-installer
 
 # Install Go (if not already installed)
 # Visit https://golang.org/doc/install for instructions
 
 # Build the project
-go build -o k8s-installer cmd/installer/main.go
+go build -o kubeforge-cli cmd/installer/main.go
 ```
 
 ## Project Structure
@@ -78,8 +78,8 @@ Before submitting a pull request, make sure to test your changes:
 go test ./...
 
 # Build and manually test the installer
-go build -o k8s-installer cmd/installer/main.go
-./k8s-installer -host=<VM_IP> -key=<PATH_TO_KEY> -provider=<PROVIDER>
+go build -o kubeforge-cli cmd/installer/main.go
+./kubeforge-cli -host=<VM_IP> -key=<PATH_TO_KEY> -provider=<PROVIDER>
 ```
 
 ## Pull Request Process

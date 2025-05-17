@@ -1,12 +1,12 @@
-// Main installation logic for the kubeforge CLI
+// Package installer Main installation logic for the KubeForge CLI
 package installer
 
 import (
 	"fmt"
 
-	"github.com/yourusername/k8s-cloud-installer/pkg/config"
-	"github.com/yourusername/k8s-cloud-installer/pkg/providers"
-	"github.com/yourusername/k8s-cloud-installer/pkg/ssh"
+	"github.com/ochestra-tech/kubeforge-cli/pkg/config"
+	"github.com/ochestra-tech/kubeforge-cli/pkg/providers"
+	"github.com/ochestra-tech/kubeforge-cli/pkg/ssh"
 )
 
 // Installer manages the Kubernetes installation process

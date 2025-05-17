@@ -30,7 +30,7 @@ Before installing Kubernetes on a GCP VM, ensure you have:
 ## Installation
 
 ```bash
-./k8s-installer -host=<GCP_VM_IP_ADDRESS> -key=<PATH_TO_PRIVATE_KEY> -user=<USERNAME> -provider=gcp
+./kubeforge-cli -host=<GCP_VM_IP_ADDRESS> -key=<PATH_TO_PRIVATE_KEY> -user=<USERNAME> -provider=gcp
 ```
 
 ### Options
@@ -103,7 +103,7 @@ To add more nodes to your cluster, run the following on each new GCP VM:
 1. Install prerequisites:
 
    ```bash
-   ./k8s-installer -host=<WORKER_VM_IP> -key=<PATH_TO_KEY> -provider=gcp -user=<USERNAME> -no-init=true
+   ./kubeforge-cli -host=<WORKER_VM_IP> -key=<PATH_TO_KEY> -provider=gcp -user=<USERNAME> -no-init=true
    ```
 
 2. Run the join command (printed during master installation):

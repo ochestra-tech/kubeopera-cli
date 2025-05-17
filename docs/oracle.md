@@ -26,7 +26,7 @@ Before installing Kubernetes on an Oracle Cloud VM, ensure you have:
 ## Installation
 
 ```bash
-./k8s-installer -host=<ORACLE_VM_IP_ADDRESS> -key=<PATH_TO_PRIVATE_KEY> -provider=oracle
+./kubeforge-cli -host=<ORACLE_VM_IP_ADDRESS> -key=<PATH_TO_PRIVATE_KEY> -provider=oracle
 ```
 
 ### Options
@@ -164,7 +164,7 @@ To add more nodes to your cluster, run the following on each new Oracle Cloud VM
 
 1. Install prerequisites:
    ```bash
-   ./k8s-installer -host=<WORKER_VM_IP> -key=<PATH_TO_KEY> -provider=oracle -no-init=true
+   ./kubeforge-cli -host=<WORKER_VM_IP> -key=<PATH_TO_KEY> -provider=oracle -no-init=true
    ```
 
 2. Run the join command (printed during master installation):

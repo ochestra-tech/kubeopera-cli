@@ -26,7 +26,7 @@ Before installing Kubernetes on an AWS EC2 instance, ensure you have:
 ## Installation
 
 ```bash
-./k8s-installer -host=<EC2_IP_ADDRESS> -key=<PATH_TO_PRIVATE_KEY> -provider=aws
+./kubeforge-cli -host=<EC2_IP_ADDRESS> -key=<PATH_TO_PRIVATE_KEY> -provider=aws
 ```
 
 ### Options
@@ -90,7 +90,7 @@ To add more nodes to your cluster, run the following on each new EC2 instance:
 1. Install prerequisites:
 
    ```bash
-   ./k8s-installer -host=<WORKER_EC2_IP> -key=<PATH_TO_KEY> -provider=aws -no-init=true
+   ./kubeforge-cli -host=<WORKER_EC2_IP> -key=<PATH_TO_KEY> -provider=aws -no-init=true
    ```
 
 2. Run the join command (printed during master installation):
