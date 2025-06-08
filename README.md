@@ -1,6 +1,6 @@
-# kubeforge-cli
+# kubeopera-cli
 
-Installs Kubernetes on a remote VM from any of the major cloud providers
+Installs Kubernetes on a remote VM of any of the major cloud providers
 
 KubeForge is a Go-based command-line tool for automated Kubernetes installation on virtual machines across multiple cloud providers (AWS, GCP, Azure, and Oracle Cloud).
 
