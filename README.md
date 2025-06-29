@@ -1,4 +1,4 @@
-# kubeopera-cli
+# kubeforge-cli
 
 Installs Kubernetes on a remote VM of any of the major cloud providers
 
