@@ -1,8 +1,8 @@
-# kubeforge-cli
+# kubeopera-cli
 
 Installs Kubernetes on a remote VM of any of the major cloud providers
 
-KubeForge is a Go-based command-line tool for automated Kubernetes installation on virtual machines across multiple cloud providers (AWS, GCP, Azure, and Oracle Cloud).
+kubeopera-cli is a Go-based command-line tool for automated Kubernetes installation on virtual machines across multiple cloud providers (AWS, GCP, Azure, and Oracle Cloud).
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -30,19 +30,19 @@ git clone https://github.com/ochestra-tech/kubeopera-cli.git
 cd kubeopera-cli
 
 # Build the binary
-go build -o kubeforge-cli cmd/installer/main.go
+go build -o kubeopera-cli cmd/installer/main.go
 
 # Make it executable
-chmod +x kubeforge-cli
+chmod +x kubeopera-cli
 
 # Optionally, move to a directory in your PATH
-sudo mv kubeforge-cli /usr/local/bin/
+sudo mv kubeopera-cli /usr/local/bin/
 ```
 
 ## Usage
 
 ```
-kubeforge-cli [flags]
+kubeopera-cli [flags]
 ```
 
 ### Flags
@@ -62,37 +62,37 @@ kubeforge-cli [flags]
 #### Install on AWS EC2 Instance
 
 ```bash
-kubeforge-cli -host=54.123.45.67 -key=~/.ssh/aws-key.pem -provider=aws
+kubeopera-cli -host=54.123.45.67 -key=~/.ssh/aws-key.pem -provider=aws
 ```
 
 #### Install on GCP Compute Engine VM
 
 ```bash
-kubeforge-cli -host=35.123.45.67 -key=~/.ssh/gcp-key.pem -provider=gcp -user=username
+kubeopera-cli -host=35.123.45.67 -key=~/.ssh/gcp-key.pem -provider=gcp -user=username
 ```
 
 #### Install on Azure VM
 
 ```bash
-kubeforge-cli -host=20.123.45.67 -key=~/.ssh/azure-key.pem -provider=azure
+kubeopera-cli -host=20.123.45.67 -key=~/.ssh/azure-key.pem -provider=azure
 ```
 
 #### Install on Oracle Cloud VM
 
 ```bash
-kubeforge-cli -host=129.123.45.67 -key=~/.ssh/oracle-key.pem -provider=oracle
+kubeopera-cli -host=129.123.45.67 -key=~/.ssh/oracle-key.pem -provider=oracle
 ```
 
 #### Specify Linux distribution
 
 ```bash
-kubeforge-cli -host=54.123.45.67 -key=~/.ssh/my-key.pem -provider=aws -distro=ubuntu
+kubeopera-cli -host=54.123.45.67 -key=~/.ssh/my-key.pem -provider=aws -distro=ubuntu
 ```
 
 #### Using password authentication instead of key
 
 ```bash
-kubeforge-cli -host=54.123.45.67 -password=securepassword -provider=aws
+kubeopera-cli -host=54.123.45.67 -password=securepassword -provider=aws
 ```
 
 ## Detailed Implementation
